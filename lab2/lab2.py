@@ -10,8 +10,8 @@ def pcolormesh(matrix, title):
     plt.title(title)
     plt.ylabel('state')
     plt.xlabel('time step')
-    plt.yticks(np.arange(obsloglik.shape[1]) + .5, range(obsloglik.shape[1]))
-    plt.xticks(np.arange(0, obsloglik.shape[0], 10) + .5, range(0, obsloglik.shape[0], 10))
+    plt.yticks(np.arange(matrix.shape[1]) + .5, range(matrix.shape[1]))
+    plt.xticks(np.arange(0, matrix.shape[0], 10) + .5, range(0, matrix.shape[0], 10))
 
 
 warnings.filterwarnings(action='ignore', category=RuntimeWarning)
