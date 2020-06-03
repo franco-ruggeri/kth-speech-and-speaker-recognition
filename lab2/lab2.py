@@ -107,8 +107,7 @@ print()
 # 5.3 Viterbi approximation #
 #############################
 
-vloglik, vpath_f = viterbi(obsloglik, np.log(wordHMM['startprob']), np.log(wordHMM['transmat']))
-vpath_nf = viterbi(obsloglik, np.log(wordHMM['startprob']), np.log(wordHMM['transmat']), forceFinalState=False)[1]
+vloglik, vpath = viterbi(obsloglik, np.log(wordHMM['startprob']), np.log(wordHMM['transmat']))
 
 print('Viterbi log-likelihood, computed:', vloglik)
 print('Viterbi log-likelihood, example:', example['vloglik'])
@@ -122,11 +121,10 @@ print()
 
 # alphas overlaid by best best
 plt.figure()
-pcolormesh(logalpha, r'Log $\alpha$ with best path (final state forced)')
-plt.plot(np.arange(len(vpath_f)) + .5, vpath_f + .5, 'r', linewidth=2)
-plt.figure()
-pcolormesh(logalpha, r'Log $\alpha$ with best path (final state not forced)')
-plt.plot(np.arange(len(vpath_f)) + .5, vpath_nf + .5, 'r', linewidth=2)
+pcolormesh(logalpha, r'Log $\alpha$ with best path')
+plt.plot(np.arange(len(vpath)) + .5, example['vpath'] + .5, 'k', linewidth=2, label='example')
+plt.plot(np.arange(len(vpath)) + .5, vpath + .5, 'r--', linewidth=1, label='computed')
+plt.legend()
 
 # efficiency forward vs Viterbi
 t_forward = timeit.default_timer()
