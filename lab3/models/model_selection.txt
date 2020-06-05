@@ -1,0 +1,85 @@
+dnn_1hl_256u_lmfcc_relu
+validation loss: 1.2466914653778076
+validation accuracy: 0.6088517904281616
+
+
+dnn_2hl_256u_lmfcc_relu
+validation loss: 1.2398803234100342
+validation accuracy: 0.610487163066864
+
+
+dnn_3hl_256u_lmfcc_relu
+validation loss: 1.2473821640014648
+validation accuracy: 0.6087098717689514
+
+
+dnn_4hl_256u_lmfcc_relu
+validation loss: 1.2467013597488403
+validation accuracy: 0.603871762752533
+
+
+dnn_1hl_256u_mspec_relu
+validation loss: 1.2155506610870361
+validation accuracy: 0.6192809343338013
+
+
+dnn_3hl_256u_mspec_relu
+validation loss: 1.1927984952926636
+validation accuracy: 0.6220887899398804
+
+
+dnn_2hl_256u_mspec_relu
+validation loss: 1.1990963220596313
+validation accuracy: 0.6237303018569946
+
+
+dnn_4hl_256u_mspec_relu
+validation loss: 1.2034344673156738
+validation accuracy: 0.6217740774154663
+
+
+dnn_1hl_256u_dlmfcc_relu
+validation loss: 0.6950209736824036
+validation accuracy: 0.7738543152809143
+
+
+dnn_2hl_256u_dlmfcc_relu
+validation loss: 0.6515945196151733
+validation accuracy: 0.7883378863334656
+
+
+dnn_3hl_256u_dlmfcc_relu
+validation loss: 0.6578879356384277
+validation accuracy: 0.7853078842163086
+
+
+dnn_4hl_256u_dlmfcc_relu
+validation loss: 0.6551369428634644
+validation accuracy: 0.7806795835494995
+
+
+dnn_1hl_256u_dmspec_relu
+validation loss: 0.7286306619644165
+validation accuracy: 0.76176518201828
+
+
+dnn_2hl_256u_dmspec_relu
+validation loss: 0.7003346085548401
+validation accuracy: 0.7758414149284363
+
+
+dnn_3hl_256u_dmspec_relu
+validation loss: 0.6897842288017273
+validation accuracy: 0.7776063680648804
+
+
+dnn_4hl_256u_dmspec_relu
+validation loss: 0.6884645819664001
+validation accuracy: 0.7722868919372559
+
+
+dnn_4hl_256u_dlmfcc_relu_bn
+validation loss: 0.6191381216049194
+validation accuracy: 0.7965577840805054
+
+

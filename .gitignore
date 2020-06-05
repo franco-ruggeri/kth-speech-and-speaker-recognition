@@ -1,2 +1,6 @@
 lab*/__pycache__/
-lab*/.ipnb_checkpoints/
+lab*/*~
+lab*/.ipynb_checkpoints/
+lab3/data/tidigits/
+lab3/data/traindata.npz
+lab3/data/testdata.npz
