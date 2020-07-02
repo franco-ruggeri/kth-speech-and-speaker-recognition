@@ -1,4 +1,5 @@
 lab*/__pycache__/
+lab*/.idea/
 lab*/*~
 lab*/.ipynb_checkpoints/
 lab3/data/tidigits/
