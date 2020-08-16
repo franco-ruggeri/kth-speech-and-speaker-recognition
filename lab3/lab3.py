@@ -275,7 +275,7 @@ K = len(stateList)          # number of classes (don't touch)
 print('preparing matrices... ', end='')
 
 # matrices for training set
-train_x, train_y = prepare_matrices(traindata, K, feature_type, dynamic_features=dynamic_features)
+train_x, train_y = prepare_matrices(traindata, K, feature_type, dynamic_features)
 
 # standardisation of training set
 scaler = StandardScaler()
@@ -283,8 +283,8 @@ scaler.fit(train_x)
 train_x = scaler.transform(train_x)
 
 # matrices for validation and test sets (already standardised)
-val_x, val_y = prepare_matrices(valdata, K, feature_type, dynamic_features=dynamic_features, scaler=scaler)
-test_x, test_y = prepare_matrices(testdata, K, feature_type, dynamic_features=dynamic_features, scaler=scaler)
+val_x, val_y = prepare_matrices(valdata, K, feature_type, dynamic_features, scaler=scaler)
+test_x, test_y = prepare_matrices(testdata, K, feature_type, dynamic_features, scaler=scaler)
 print('done')
 
 
